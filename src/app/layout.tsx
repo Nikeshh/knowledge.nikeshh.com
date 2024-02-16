@@ -3,6 +3,8 @@ import "./globals.css";
 import { ThemeProvider } from "@/providers/theme-provider";
 import { DM_Sans } from "next/font/google";
 import ModalProvider from "@/providers/modal-provider";
+import { dark } from "@clerk/themes";
+import { ClerkProvider } from "@clerk/nextjs";
 
 const font = DM_Sans({ subsets: ["latin"] });
 
@@ -26,7 +28,9 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <ModalProvider>
-            {children}
+            <ClerkProvider appearance={{ baseTheme: dark }}>
+              {children}
+            </ClerkProvider>
           </ModalProvider>
         </ThemeProvider>
       </body>
