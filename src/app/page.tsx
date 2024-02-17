@@ -14,6 +14,7 @@ import {
     AccordionItem,
     AccordionTrigger,
   } from "@/components/ui/accordion"
+import Knowledge from '@/components/knowledge'
 
 export default function Home() {
   useEffect(() => {
@@ -28,32 +29,32 @@ export default function Home() {
 
   return (
     <div className='flex justify-center h-screen w-full mt-20'>
-      <Tabs defaultValue="saas" className="hidden lg:inline-block">
-        <TabsList>
+      <Tabs defaultValue="saas" className="w-full container hidden lg:inline-block">
+        <TabsList className='flex justify-center'>
           <TabsTrigger value="saas">SAAS</TabsTrigger>
           <TabsTrigger value="fullstackdevelopment">Full Stack Development</TabsTrigger>
         </TabsList>
         <TabsContent value="saas">
-          SAAS
+          <Knowledge />
         </TabsContent>
         <TabsContent value="fullstackdevelopment">
-          Full Stack Development
+          <Knowledge />
         </TabsContent>
-    </Tabs>
-    <Accordion type="single" collapsible className="container w-full inline-block lg:hidden">
-        <AccordionItem value="item-1">
-          <AccordionTrigger>SAAS</AccordionTrigger>
-          <AccordionContent>
-            SAAS
-          </AccordionContent>
-        </AccordionItem>
-        <AccordionItem value="item-2">
-          <AccordionTrigger>Full Stack Development</AccordionTrigger>
-          <AccordionContent>
-            Full Stack Development
-          </AccordionContent>
-        </AccordionItem>
-    </Accordion>
+      </Tabs>
+      <Accordion type="single" collapsible className="container w-full inline-block lg:hidden">
+          <AccordionItem value="item-1">
+            <AccordionTrigger>SAAS</AccordionTrigger>
+            <AccordionContent>
+              <Knowledge />
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="item-2">
+            <AccordionTrigger>Full Stack Development</AccordionTrigger>
+            <AccordionContent>
+              <Knowledge />
+            </AccordionContent>
+          </AccordionItem>
+      </Accordion>
     </div>
   );
 }
