@@ -5,10 +5,10 @@ import { toast } from "sonner"
 
 export default function Home() {
   useEffect(() => {
-    toast("Event has been created", {
+    toast("New Project has been added", {
       description: "Sunday, December 03, 2023 at 9:00 AM",
       action: {
-        label: "Undo",
+        label: "View",
         onClick: () => console.log("Undo"),
       },
     })
