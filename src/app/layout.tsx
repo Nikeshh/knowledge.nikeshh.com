@@ -36,7 +36,7 @@ export default function RootLayout({
                 <NotificationC />
                 <Navigation />
                 {children}
-                <Footer />
+                {/*<Footer />*/}
               </main>
             </ClerkProvider>
           </ModalProvider>
