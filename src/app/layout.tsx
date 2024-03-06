@@ -8,7 +8,6 @@ import { ClerkProvider } from "@clerk/nextjs";
 import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
 import NotificationC from "@/components/notification";
-import { Toaster } from "@/components/ui/sonner"
 
 const font = DM_Sans({ subsets: ["latin"] });
 
@@ -42,7 +41,6 @@ export default function RootLayout({
             </ClerkProvider>
           </ModalProvider>
         </ThemeProvider>
-        <Toaster />
       </body>
     </html>
   );
