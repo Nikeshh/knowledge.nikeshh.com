@@ -90,10 +90,10 @@ B (255 */
 
 @layer base {
   * {
-    @apply border-border;
+    @apply tw-border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply tw-bg-background tw-text-foreground;
   }
 }
 

@@ -24,33 +24,6 @@
 	$(window).on('load', function() {
 		$('.preloader').fadeOut();
 	});
-
-	// WOW Animation JS
-	if($('.wow').length){
-		var wow = new WOW({
-			mobile: false
-		});
-		wow.init();
-	};	
-
-	$('.projects').owlCarousel({
-		loop:true,
-		margin:0,
-		nav:true,
-		autoplay:false,
-		nav:false,
-		responsive:{
-			0:{
-				items:1
-			},
-			600:{
-				items:3
-			},
-			1000:{
-				items:4
-			}
-		}
-	})
 	
 	$(function() {
 		var header = $(".header");

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import "./globals.css";
 import { ThemeProvider } from "@/providers/theme-provider";
 import { DM_Sans } from "next/font/google";
 import ModalProvider from "@/providers/modal-provider";
@@ -30,14 +31,8 @@ export default function RootLayout({
         <link rel="stylesheet" href="/static/css/animate.min.css" />
         <link rel="stylesheet" href="/static/css/font-awesome.css" />
         <link rel="stylesheet" href="/static/css/boxicons.min.css" />
-        <link rel="stylesheet" href="/static/css/magnific-popup.min.css" />
-        <link rel="stylesheet" href="/static/css/owl.carousel.min.css" />
-        <link rel="stylesheet" href="/static/css/owl.theme.default.min.css" />
         <link rel="stylesheet" href="/static/css/style.css" />
         <link rel="stylesheet" href="/static/css/responsive.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" />
         <title>Docs</title>
       </head>
       <body className={font.className} suppressHydrationWarning={true}>
@@ -59,10 +54,7 @@ export default function RootLayout({
           </ModalProvider>
         </ThemeProvider>
         <Script src="/static/js/jquery.min.js"></Script>
-        <Script src="/static/js/popper.min.js"></Script>
         <Script src="/static/js/bootstrap.min.js"></Script>
-        <Script src="/static/js/wow.min.js"></Script>
-        <Script src="/static/js/owl.carousel.min.js"></Script>
         <Script src="/static/js/custom.js"></Script>
       </body>
     </html>

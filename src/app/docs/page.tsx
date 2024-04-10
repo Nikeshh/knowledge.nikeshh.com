@@ -6,8 +6,8 @@ const Page = () => {
                     <div className="row">
                         <div className="col-lg-12 text-center col-md-12 col-12">
                             <p>🚀<span>Ship faster with beautiful components</span> <a
-                                    className="btn-info border-gradient border-gradient-purple border-gradient-green px-2 py-2 rounded-pill"
-                                    href="#">NextUI Pro <img src="/static/images/img-4.png" alt="" /></a></p>
+                                className="btn-info border-gradient border-gradient-purple border-gradient-green px-2 py-2 rounded-pill"
+                                href="#">NextUI Pro <img src="/static/images/img-4.png" alt="" /></a></p>
                         </div>
                     </div>
                 </div>
@@ -54,19 +54,19 @@ const Page = () => {
                                     <ul className="navbar-nav ml-auto ml-2 hidden-xs">
                                         <li className="nav-item active">
                                             <a className="nav-link px-1" href="#"><i className="fa fa-twitter"
-                                                    aria-hidden="true"></i></a>
+                                                aria-hidden="true"></i></a>
                                         </li>
                                         <li className="nav-item">
                                             <a className="nav-link px-1" href="#"><i className="fa fa-github-alt"
-                                                    aria-hidden="true"></i></a>
+                                                aria-hidden="true"></i></a>
                                         </li>
                                         <li className="nav-item">
                                             <a className="nav-link px-1" href="#"><i className="fa fa-github-square"
-                                                    aria-hidden="true"></i></a>
+                                                aria-hidden="true"></i></a>
                                         </li>
                                         <li className="nav-item">
                                             <a className="nav-link px-1" href="#"><i className="fa fa-eercast"
-                                                    aria-hidden="true"></i></a>
+                                                aria-hidden="true"></i></a>
                                         </li>
                                         <li className="nav-item">
                                             <form data-toggle="modal" data-target="#exampleModal">
@@ -156,7 +156,7 @@ const Page = () => {
                                                                 <li><a href="#">Code</a></li>
                                                                 <li><a href="#">Divider</a></li>
                                                                 <li><a href="#">Dropdown</a> <span
-                                                                        className="updated">Updated</span></li>
+                                                                    className="updated">Updated</span></li>
                                                                 <li><a href="#">Image</a></li>
                                                                 <li><a href="#">Input</a></li>
                                                                 <li><a href="#">Kbd</a></li>
@@ -182,7 +182,7 @@ const Page = () => {
                                                                 <li><a href="#">Tabs</a> <span className="updated">Updated</span>
                                                                 </li>
                                                                 <li><a href="#">Textarea</a> <span
-                                                                        className="updated">Updated</span></li>
+                                                                    className="updated">Updated</span></li>
                                                                 <li><a href="#">Tooltip</a></li>
                                                                 <li><a href="#">User</a></li>
                                                             </ul>
@@ -315,7 +315,7 @@ const Page = () => {
                                 <h4 id="list-item-2">What is NextUI?</h4>
                                 <p>NextUI is a UI library for React that helps you build beautiful and accessible user
                                     interfaces. Created on top of <a href="#">Tailwind CSS <img src="/static/images/icon-2.png"
-                                            alt="" /></a> and <a href="#">React Aria. <img src="/static/images/icon-2.png"
+                                        alt="" /></a> and <a href="#">React Aria. <img src="/static/images/icon-2.png"
                                             alt="" /></a></p>
                                 <p>NextUI&apos;s primary goal is to streamline the development process, offering a beautiful and
                                     adaptable system design for an enhanced user experience.</p>
@@ -338,8 +338,8 @@ const Page = () => {
                                 </ul>
                                 <h4 id="list-item-5">How is NextUI different from TailwindCSS components libraries?</h4>
                                 <p>TailwindCSS components libraries such as <a href="#">TailwindUI <img
-                                            src="/static/images/icon-2.png" alt="" /></a> , <a href="#">Flowbite <img
-                                            src="/static/images/icon-2.png" alt="" /></a>, or <a href="#">Preline <img
+                                    src="/static/images/icon-2.png" alt="" /></a> , <a href="#">Flowbite <img
+                                        src="/static/images/icon-2.png" alt="" /></a>, or <a href="#">Preline <img
                                             src="/static/images/icon-2.png" alt="" /></a>, just to name a few, only offer a curated
                                     selection of TailwindCSS classes to style your components. They don&apos;t provide any React
                                     specific components, logic, props, composition, or accessibility features.</p>
@@ -347,7 +347,7 @@ const Page = () => {
                                     accessible and customizable components, hooks, and utilities.</p>
                                 <h4 id="list-item-6">How NextUI deals with TailwindCSS classes conflicts?</h4>
                                 <p>We created a TailwindCSS utility library called <a href="#">tailwind-variants <img
-                                            src="/static/images/icon-2.png" alt="" /></a> that automatically handles TailwindCSS
+                                    src="/static/images/icon-2.png" alt="" /></a> that automatically handles TailwindCSS
                                     class conflicts. This ensures your custom classes will consistently override the default
                                     ones, eliminating any duplication.</p>
                                 <h4 id="list-item-7">Does NextUI use runtime CSS?</h4>
@@ -385,18 +385,18 @@ const Page = () => {
                                 </div>
                                 <h4 id="list-item-12">Contributing</h4>
                                 <p>PRs on NextUI are always welcome, please see our <a href="#">contribution guidelines <img
-                                            src="/static/images/icon-2.png" alt="" /></a> to learn how you can contribute to this
+                                    src="/static/images/icon-2.png" alt="" /></a> to learn how you can contribute to this
                                     project.</p>
                                 <div className="row">
                                     <div className="col-lg-12 py-5 text-right col-md-12 col-12">
                                         <a href="#" className="installation">Installation <i className="fa fa-angle-right"
-                                                aria-hidden="true"></i></a>
+                                            aria-hidden="true"></i></a>
                                     </div>
                                 </div>
                                 <div className="row">
                                     <div className="col-lg-12 py-5  col-md-12 col-12">
                                         <a className="end-this" href="#">Edit this page on GitHub <img src="/static/images/icon-2.png"
-                                                alt="" /></a>
+                                            alt="" /></a>
                                     </div>
                                 </div>
                                 <div className="row">
@@ -441,7 +441,7 @@ const Page = () => {
                 </div>
             </section>
             <a href="" className="ask" data-toggle="modal" data-target="#staticBackdrop">
-                <img src="/static/images/ul.png" alt=""/>
+                <img src="/static/images/ul.png" alt="" />
                 <h5>Ask AI</h5>
             </a>
             <div className="modal fade" id="exampleModal" tabIndex={Number("-1")} aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -472,50 +472,50 @@ const Page = () => {
             </div>
             <div className="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabIndex={Number("-1")} aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div className="modal-dialog modal-dialog-centered modal-xl">
-                <div className="modal-content">
-                    <div className="modal-header">
-                    <h5 className="modal-title" id="staticBackdropLabel"><img src="/static/images/ul.png" alt=""/> NextUI Docs AI</h5>
-                    <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    </div>
-                    <div className="modal-body">
-                        <p>This is a custom LLM for NextUI with access to all developer docs (nextui.org/docs) and GitHub Issues and PRs (github.com/nextui-org/nextui).</p>
-                        <div className="filed">
-                            <h6>EXAMPLE QUESTIONS</h6>
-                            <div className="row">
-                                <div className="col-lg-6 col-md-6 col-12">
-                                    <a href="#" className="btn btn-default">How do I install for Next.js?</a>
-                                </div>
-                                <div className="col-lg-6 col-md-6 col-12">
-                                    <a href="#" className="btn btn-default">How do I customize primary color?</a>
-                                </div>
-                            </div>
+                    <div className="modal-content">
+                        <div className="modal-header">
+                            <h5 className="modal-title" id="staticBackdropLabel"><img src="/static/images/ul.png" alt="" /> NextUI Docs AI</h5>
+                            <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
                         </div>
-                        <div className="filed">
-                            <form>
+                        <div className="modal-body">
+                            <p>This is a custom LLM for NextUI with access to all developer docs (nextui.org/docs) and GitHub Issues and PRs (github.com/nextui-org/nextui).</p>
+                            <div className="filed">
+                                <h6>EXAMPLE QUESTIONS</h6>
                                 <div className="row">
-                                    <div className="col-lg-9 col-md-9 col-12">
-                                        <input type="text" placeholder="Ask me a question about NextUI..."/>
+                                    <div className="col-lg-6 col-md-6 col-12">
+                                        <a href="#" className="btn btn-default">How do I install for Next.js?</a>
                                     </div>
-                                    <div className="col-lg-3 text-right col-md-3 col-12">
-                                        <button type="submit"><i className="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+                                    <div className="col-lg-6 col-md-6 col-12">
+                                        <a href="#" className="btn btn-default">How do I customize primary color?</a>
                                     </div>
                                 </div>
-                            </form>
-                        </div>
-                        <div className="filed py-2">
-                            <div className="row">
-                                <div className="col-lg-6 col-md-6 col-6">
-                                    <p>powered by <a href="#">kapa.ai</a></p>
-                                </div>
-                                <div className="col-lg-6 text-right col-md-6 col-6">
-                                    <p>protected by reCAPTCHA</p>
+                            </div>
+                            <div className="filed">
+                                <form>
+                                    <div className="row">
+                                        <div className="col-lg-9 col-md-9 col-12">
+                                            <input type="text" placeholder="Ask me a question about NextUI..." />
+                                        </div>
+                                        <div className="col-lg-3 text-right col-md-3 col-12">
+                                            <button type="submit"><i className="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div className="filed py-2">
+                                <div className="row">
+                                    <div className="col-lg-6 col-md-6 col-6">
+                                        <p>powered by <a href="#">kapa.ai</a></p>
+                                    </div>
+                                    <div className="col-lg-6 text-right col-md-6 col-6">
+                                        <p>protected by reCAPTCHA</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
                 </div>
             </div>
         </div>
