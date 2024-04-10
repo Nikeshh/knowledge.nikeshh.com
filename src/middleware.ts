@@ -10,7 +10,7 @@ export default authMiddleware({
   async afterAuth(auth, req) {
     const url = req.nextUrl;
     if (url.pathname === '/') {
-      return NextResponse.redirect(new URL(`/home/`, req.url))
+      return NextResponse.redirect(new URL(`/docs/`, req.url))
     }
   }
 });
