@@ -8,6 +8,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
 import NotificationC from "@/components/notification";
+import Script from "next/script";
 
 const font = DM_Sans({ subsets: ["latin"] });
 
@@ -33,8 +34,8 @@ export default function RootLayout({
           <ModalProvider>
             <ClerkProvider appearance={{ baseTheme: dark }}>
               <main className="w-full">
-                <NotificationC />
-                <Navigation />
+                {/*<NotificationC />*/}
+                {/*<Navigation />*/}
                 {children}
                 {/*<Footer />*/}
               </main>

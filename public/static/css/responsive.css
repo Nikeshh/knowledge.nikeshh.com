@@ -1,0 +1,199 @@
+@media only screen and (max-width:767px) {
+.flush-xs {
+    padding-right: 0px;
+    padding-left: 0px;
+} 
+
+.navbar-toggler {
+    line-height: 1;
+    padding: 0;
+    border-radius: 0;
+}
+.navbar-toggler.menu-icon {
+    width:35px;
+    padding:0;
+    cursor: pointer;
+    position: relative;
+    border:0px;
+}
+.navbar-toggler.menu-icon span {
+    width: 100%;
+    height:3px;
+    display: block;
+    background-color: #000;
+    margin: 6px 0;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+.navbar-toggler.menu-icon.active span {
+    position: absolute;
+    top: calc(50% - 8px);
+}
+.navbar-toggler.menu-icon.active span:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
+.navbar-toggler.menu-icon.active span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+}
+.navbar-toggler.menu-icon.active span:nth-child(2) {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    display: none;
+} 
+
+.visible-xs {
+    display: inline-block;
+}
+
+.hidden-xs {
+    display:none !important;
+}
+
+
+.top-head p span {
+    text-align:left;
+}
+
+.top-head a.btn-info {
+}
+
+.scroll-content .btn-default {
+    margin-bottom:15px;
+}
+
+.right-div {
+    display:none;
+}
+
+.scroll-content h4 {
+    color: #fff;
+    font-size: 18px;
+    margin: 10px 0px;
+}
+
+.scroll-content p {
+    font-size: 14px;
+    color: #a1a1aa;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background:url(/static/images/download.svg) 50% 50% no-repeat !important;
+}
+
+.top-head {
+    padding: 15px 15px;
+}
+
+.top-head a.btn-info {
+    display: inline-block;
+}
+
+.modal.show .modal-dialog {
+    padding: 0px 20px;
+    max-width:100% !important;
+}
+
+#staticBackdrop .modal-body .btn.btn-default {
+    margin-bottom:10px;
+}
+
+}
+
+@media only screen and (min-width:768px) and (max-width:992px) {
+.nav-link, .navbar-expand-md .navbar-nav .nav-link, .header a {
+    font-size:13px;
+    padding-left: 10px;
+    padding-right: 10px;
+}  
+
+.navbar-toggler.menu-icon {
+    width:35px;
+    padding:0;
+    cursor: pointer;
+    position: relative;
+    border:0px;
+}
+.navbar-toggler.menu-icon span {
+    width: 100%;
+    height:3px;
+    display: block;
+    background-color: #000;
+    margin: 6px 0;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+.navbar-toggler.menu-icon.active span {
+    position: absolute;
+    top: calc(50% - 8px);
+}
+.navbar-toggler.menu-icon.active span:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
+.navbar-toggler.menu-icon.active span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+}
+.navbar-toggler.menu-icon.active span:nth-child(2) {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    display: none;
+} 
+
+.scroll-content .btn-default .fa-twitter {
+    color: #00acee;
+    font-size: 18px;
+    margin-right: 3px;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background:url(/static/images/download.svg) 50% 50% no-repeat !important;
+}
+
+.visible-xs {
+    display: inline-block;
+}
+
+.hidden-xs {
+    display:none !important;
+}
+
+.modal.show .modal-dialog {
+    padding: 0px 20px;
+    max-width:100% !important;
+}
+
+
+}
+
+@media only screen and (min-width:994px) and (max-width:1169px) {
+
+    .scroll-content .btn-default .fa-twitter {
+        color: #00acee;
+        font-size: 18px;
+        margin-right: 3px;
+    } 
+
+    .scroll-content .btn-default .fa-github-alt,.scroll-content .btn-default .fa-github {
+        font-size:18px;
+    }
+
+    .scroll-content .btn-default {
+        padding: 9px 10px;
+    }
+
+    .scroll-content .btn-default {
+        font-size:14px;
+    }
+
+}
+
+
+@media (min-width: 1200px){
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1280px;
+}
+
+}
