@@ -117,3 +117,31 @@ B (255 */
     transform: scale(1);
   }
 }
+
+.glass-container {
+  position: relative;
+}
+
+.glass-container::before {
+  @apply tw-absolute tw--inset-[10px] tw--z-10 tw-rounded-xl tw-border tw-border-slate-100/20 tw-bg-slate-200/10 tw-backdrop-blur-md;
+  content: "";
+}
+
+.signal-line {
+  --rotation: 90deg;
+  @apply tw-h-[20px] tw-w-[1.5px] tw-bg-gradient-to-t md:tw-h-[1.5px] md:tw-w-[30px] lg:tw-w-[40px] xl:tw-w-[50px];
+  background-color: hsla(0, 0%, 100%, 0.1);
+  background-image: linear-gradient(
+    var(--rotation),
+    rgba(255, 255, 255, 0) 50%,
+    #bfdbfe 50%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  background-size: 400% 400%;
+}
+
+@media (max-width: 767px) {
+  .signal-line {
+    --rotation: 0deg;
+  }
+}

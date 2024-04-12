@@ -9,6 +9,8 @@ import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
 import NotificationC from "@/components/notification";
 import Script from "next/script";
+import { PrismicPreview } from "@prismicio/next";
+import { repositoryName } from "@/prismicio";
 
 const font = DM_Sans({ subsets: ["latin"] });
 
@@ -56,6 +58,7 @@ export default function RootLayout({
         <Script src="/static/js/jquery.min.js"></Script>
         <Script src="/static/js/bootstrap.min.js"></Script>
         <Script src="/static/js/custom.js"></Script>
+        <PrismicPreview repositoryName={repositoryName} />
       </body>
     </html>
   );
