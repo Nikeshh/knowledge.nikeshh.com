@@ -3,18 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "concurrently \"npm:next:dev\" \"npm:slicemachine\" --names \"next,slicemachine\" --prefix-colors blue,magenta",
+    "next:dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "slicemachine": "start-slicemachine"
+    "slicemachine": "start-slicemachine",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "@clerk/nextjs": "^4.29.7",
     "@clerk/themes": "^1.7.9",
-    "@prismicio/client": "latest",
-    "@prismicio/next": "latest",
-    "@prismicio/react": "latest",
+    "@prismicio/client": "^7.4.0",
+    "@prismicio/next": "^1.5.0",
+    "@prismicio/react": "^2.7.4",
     "@radix-ui/react-accordion": "^1.1.2",
     "@radix-ui/react-dropdown-menu": "^2.0.6",
     "@radix-ui/react-label": "^2.0.2",
