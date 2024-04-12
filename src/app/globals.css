@@ -90,10 +90,10 @@ B (255 */
 
 @layer base {
   * {
-    @apply tw-border-border;
+    @apply border-border;
   }
   body {
-    @apply tw-bg-background tw-text-foreground;
+    @apply bg-background text-foreground;
   }
 }
 
@@ -123,13 +123,13 @@ B (255 */
 }
 
 .glass-container::before {
-  @apply tw-absolute tw--inset-[10px] tw--z-10 tw-rounded-xl tw-border tw-border-slate-100/20 tw-bg-slate-200/10 tw-backdrop-blur-md;
+  @apply absolute -inset-[10px] -z-10 rounded-xl border border-slate-100/20 bg-slate-200/10 backdrop-blur-md;
   content: "";
 }
 
 .signal-line {
   --rotation: 90deg;
-  @apply tw-h-[20px] tw-w-[1.5px] tw-bg-gradient-to-t md:tw-h-[1.5px] md:tw-w-[30px] lg:tw-w-[40px] xl:tw-w-[50px];
+  @apply h-[20px] w-[1.5px] bg-gradient-to-t md:h-[1.5px] md:w-[30px] lg:w-[40px] xl:w-[50px];
   background-color: hsla(0, 0%, 100%, 0.1);
   background-image: linear-gradient(
     var(--rotation),

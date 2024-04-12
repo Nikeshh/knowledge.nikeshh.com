@@ -5,12 +5,10 @@ import { DM_Sans } from "next/font/google";
 import ModalProvider from "@/providers/modal-provider";
 import { dark } from "@clerk/themes";
 import { ClerkProvider } from "@clerk/nextjs";
-import Navigation from "@/components/navigation";
-import Footer from "@/components/footer";
-import NotificationC from "@/components/notification";
-import Script from "next/script";
 import { PrismicPreview } from "@prismicio/next";
 import { repositoryName } from "@/prismicio";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const font = DM_Sans({ subsets: ["latin"] });
 
@@ -26,17 +24,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
-      <head>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <link rel="stylesheet" href="/static/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="/static/css/animate.min.css" />
-        <link rel="stylesheet" href="/static/css/font-awesome.css" />
-        <link rel="stylesheet" href="/static/css/boxicons.min.css" />
-        <link rel="stylesheet" href="/static/css/style.css" />
-        <link rel="stylesheet" href="/static/css/responsive.css" />
-        <title>Docs</title>
-      </head>
       <body className={font.className} suppressHydrationWarning={true}>
         <ThemeProvider
           attribute="class"
@@ -46,19 +33,13 @@ export default function RootLayout({
         >
           <ModalProvider>
             <ClerkProvider appearance={{ baseTheme: dark }}>
-              <main className="w-full">
-                {/*<NotificationC />*/}
-                {/*<Navigation />*/}
-                {children}
-                {/*<Footer />*/}
-              </main>
+              <Header />
+              <main>{children}</main>
+              <Footer />
+              <PrismicPreview repositoryName={repositoryName} />
             </ClerkProvider>
           </ModalProvider>
         </ThemeProvider>
-        <Script src="/static/js/jquery.min.js"></Script>
-        <Script src="/static/js/bootstrap.min.js"></Script>
-        <Script src="/static/js/custom.js"></Script>
-        <PrismicPreview repositoryName={repositoryName} />
       </body>
     </html>
   );
