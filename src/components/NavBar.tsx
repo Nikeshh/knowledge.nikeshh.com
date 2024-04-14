@@ -23,10 +23,11 @@ export default function NavBar({ settings }: NavBarProps) {
       <div className="mx-auto flex max-w-6xl flex-col justify-between py-2 font-medium text-white md:flex-row md:items-center">
         <div className="flex items-center justify-between">
           <Link href="/" className="z-50" onClick={() => setOpen(false)}>
-            <WordMark />
-            <span className="sr-only">Glisten.ai Home Page</span>
+            Nikeshh.
+            {/*<WordMark />*/}
+            <span className="sr-only">Nikeshh</span>
           </Link>
-          <button
+          {/*<button
             type="button"
             className="block p-2 text-3xl text-white md:hidden"
             aria-expanded={open}
@@ -34,7 +35,7 @@ export default function NavBar({ settings }: NavBarProps) {
           >
             <MdMenu />
             <span className="sr-only">Open menu</span>
-          </button>
+          </button>*/}
         </div>
         {/* Mobile Nav */}
         <div
@@ -43,7 +44,7 @@ export default function NavBar({ settings }: NavBarProps) {
             open ? "translate-x-0" : "translate-x-[100%]",
           )}
         >
-          <button
+          {/*<button
             type="button"
             className="fixed right-4 top-4 mb-4 block p-2 text-3xl text-white md:hidden"
             aria-expanded={open}
@@ -51,7 +52,7 @@ export default function NavBar({ settings }: NavBarProps) {
           >
             <MdClose />
             <span className="sr-only">Close menu</span>
-          </button>
+          </button>*/}
 
           <div className="grid justify-items-end gap-8">
             {settings.data.navigation.map((item) => {
